@@ -34,12 +34,10 @@ public class QlSpringApplicationTests {
 	@Test
 	public void testQlexpress(){
 		QLExpressContext qlExpressContext = new QLExpressContext(null);
-		
 		Object result = qlExpressUtil.coreExecute(qlExpressContext, "userRepository.findAll();");
 		System.err.println("- - - - - - - - -");
 		System.err.println(result);
 		System.err.println("- - - - - - - - -");
-
 	}
 
 }
